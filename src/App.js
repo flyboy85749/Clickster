@@ -22,7 +22,7 @@ function App() {
       <Hero />
       <div className="columns">
         <div className="column">
-          <Card onClick={this.handleIncrement}/>
+          <Card />
         </div>
         <div className="column">
           <Card />

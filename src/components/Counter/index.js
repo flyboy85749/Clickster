@@ -21,6 +21,9 @@ class Counter extends React.Component {
 
   // The render method returns the JSX that should be rendered
   render() {
+    const imageClick = () => {
+      console.log("Click!");
+    }
     return (
       <div className="card text-center">
         <div className="card-header bg-primary text-white">
@@ -28,12 +31,8 @@ class Counter extends React.Component {
         </div>
         <div className="card-body">
           <p className="card-text">Click Count: {this.state.count}</p>
-          <button className="btn btn-primary" onClick={this.handleIncrement}>
-            Increment
-          </button>{" "}
-          <button className="btn btn-danger" onClick={this.handleDecrement}>
-            Decrement
-          </button>
+          {/* <img src={require('.../') onClick={() => imageClick()} alt=""/> */}
+          
         </div>
       </div>
     );
